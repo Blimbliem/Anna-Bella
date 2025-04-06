@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tamanhos de texto</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+            
+            div{
+                font-size : 60px
+
+            }
+
+            .texto{
+                /*
+                px -> tamanho fixo
+                %tamanho relativo
+                em -> tamanho relativo ao container pai
+                */
+
+                font-size: 1em;
+            }
+            .texto2{
+                font-size: 15px;
+
+            }
+		</style>
+
+	</head>
+	<body>
+    <!-- Nesse caso, a div é o container pai da classe texto, portanto o 'em' vai obter o mesmo valor que estiver na div-->
+        <div>
+            <p class="texto">Conteudo 1 </p>
+            <!--Essa classe 'texto2' não é alterada pelo container pai pois a classe utiliza o 'px' que é uma unidade fixa-->
+            <p class="texto2">Conteudo 2 </p>
+		</div>
+	</body>
+</html>
